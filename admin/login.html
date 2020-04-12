@@ -56,7 +56,8 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-
+  <!-- 引入http.js文件 -->
+  <script src="./libs/http.js"></script>
   <script>
     //入口函数
     //思路
@@ -79,7 +80,8 @@
         }
         $.ajax({
           type: 'post',
-          url: 'http://localhost:8080/api/v1/admin/user/login',
+          // url: 'http://localhost:8080/api/v1/admin/user/login',
+          url:BigNew.user_login,
           data: {
             username: username,
             password: password
